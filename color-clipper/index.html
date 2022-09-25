@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="https://unpkg.com/mvp.css@1.11/mvp.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="nav-center">
+          <h1>color flipper</h4>
+          <ul class="nav-links">
+            <li class="nav-links__simple">
+              <a href="index.html">simple</a>
+            </li>
+            <li class="nav-links__hex">
+              <a href="hex.html">hex</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="container">
+        <h2>background : <span class="color"> #f1f5f8 </span></h2>
+        <button id="btn">click me</button>
+      </div>
+      <h1>color flipper</h1>
+      <script src="app.js"></script>
+      <script>
+        const simple = document.querySelector(".nav-links__simple");
+        const hex = document.querySelector(".nav-links__hex");
+        simple.addEventListener('click', function(){
+          console.log("simple clicked")
+          simple.classList.add("active")
+        })
+
+      </script>
+    </main>
+  </body>
+
+</html>
