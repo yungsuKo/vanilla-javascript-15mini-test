@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+      }
+      article {
+        width: 300px;
+      }
+      .author-card {
+        background-color: aquamarine;
+        padding: 30px;
+        border-radius: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .btn-container {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 100px;
+        margin-bottom: 30px;
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
+    />
+    <script src="./app.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="author-card">
+      <div class="title">
+        <h2>our reviews</h2>
+        <div class="underline"></div>
+      </div>
+      <article class="review">
+        <div class="img-container">
+          <img
+            src="./example.png"
+            id="personImg"
+            width="300px"
+            height="300px"
+          />
+        </div>
+        <h4 id="author">sara johns</h4>
+        <p id="job">ux/ui writer</p>
+        <p id="info">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit quos
+          pariatur ratione, reiciendis inventore libero sed aliquid placeat
+          tenetur doloribus natus, nihil quis quae. Reiciendis cumque fugiat
+          nesciunt sunt vitae.
+        </p>
+        <div class="btn-container">
+          <button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
+          <button class="next-btn"><i class="fas fa-chevron-right"></i></button>
+        </div>
+      </article>
+      <button class="random-btn">surprise me!</button>
+    </div>
+  </body>
+</html>
