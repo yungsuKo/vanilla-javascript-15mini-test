@@ -15,7 +15,7 @@ const reviews = [
   },
 ];
 
-const personImg = document.querySelector("img");
+const personImg = document.getElementById("personImg");
 const author = document.getElementById("author");
 const job = document.getElementById("job");
 const info = document.getElementById("info");
@@ -35,5 +35,6 @@ window.addEventListener("DOMContentLoaded", function () {
   console.log("shake and bake");
   const item = reviews[currentItem];
   console.log(personImg);
+  console.log(author);
   personImg.src = item.img;
 });
